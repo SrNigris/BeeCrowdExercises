@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main()
+{
+    float tempoViagem, kmHora, gastoGasolina;
+    const int KM_LITRO = 12.0;
+    
+    scanf("%f", &tempoViagem);
+    scanf("%f", &kmHora);
+    
+    gastoGasolina = tempoViagem * kmHora / KM_LITRO;
+    
+    printf("%.3f\n", gastoGasolina);
+    
+    return 0;
+}
