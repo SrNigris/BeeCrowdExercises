@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main()
+{
+    char nome[20];
+    float salarioFixo, totalVendas, salarioTotal;
+    const float bonus = .15;
+    
+    scanf("%s", &nome);
+    scanf("%f", &salarioFixo);
+    scanf("%f", &totalVendas);
+    
+    salarioTotal = totalVendas * bonus + salarioFixo;
+    
+    printf("TOTAL = R$ %.2f\n", salarioTotal);
+    
+    return 0;
+}
