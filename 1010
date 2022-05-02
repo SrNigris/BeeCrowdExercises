@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main()
+{
+    char codigoPeca[20];
+    int numeroPeca;
+    float valorPeca, total = 0;
+    
+    int counter = 1;
+    
+    while(counter <= 2) {
+        scanf("%s", &codigoPeca);
+        scanf("%i", &numeroPeca);
+        scanf("%f", &valorPeca);
+        
+        total = numeroPeca * valorPeca + total;
+        counter = counter + 1;
+    }
+    
+    printf("VALOR A PAGAR: R$ %.2f\n", total);
+    
+    return 0;
+}
