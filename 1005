@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main()
+{
+    float A, B, media;
+    const float pesoNotaA = 3.5;
+    const float pesoNotaB = 7.5;
+    
+    scanf("%f", &A);
+    scanf("%f", &B);
+    
+    media = ((A * pesoNotaA) + (B * pesoNotaB)) / 11;
+    
+    printf("MEDIA = %.5f\n", media);
+    
+    return 0;
+}
